@@ -1,1 +1,55 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #2B2D42;
+    --cor2: #8D99AE;
+    --cor3: #EDF2F4;
+    --cor4: #EF233C;
+    --cor5: #D80032;
+}
+
+body,
+html {
+    background-color: var(--cor5);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    background-color: var(--cor3);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    ;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.402);
+}
+
+section#login>div#imagem {
+    display: block;
+    background: url(../imagens/pexels-alex-knight-2599247\ \(1\).jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+section#login>div#formulario {
+    padding: 10px;
+}
